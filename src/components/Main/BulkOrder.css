@@ -1,0 +1,53 @@
+/* src/components/Main/BulkOrder.css */
+
+.file-input {
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  
+  .file-input::-webkit-file-upload-button {
+    background: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .file-input::-webkit-file-upload-button:hover {
+    background: #003d80;
+  }
+  
+  /* Custom scrollbars */
+  .overflow-x-auto {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #888 #f9f9f9; /* Firefox */
+  }
+  
+  .overflow-x-auto::-webkit-scrollbar {
+    height: 8px; /* Height for horizontal scrollbar */
+  }
+  
+  .overflow-x-auto::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Round scrollbar thumb */
+  }
+  
+  .overflow-x-auto::-webkit-scrollbar-track {
+    background: #f9f9f9; /* Background color of the scrollbar track */
+  }
+  
+  .overflow-x-auto::-webkit-scrollbar:vertical {
+    width: 8px; /* Width for vertical scrollbar */
+  }
+  
+  .overflow-x-auto::-webkit-scrollbar-thumb:vertical {
+    background-color: #888; /* Color of the vertical scrollbar thumb */
+  }
+
+  .overflow-x-auto {
+    border: 1px solid #31363d; /* Set solid border for the scrollable area */
+  }

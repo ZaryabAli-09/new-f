@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  user-select: none; /* Similar for all modern browsers */
+}
+
+* {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version for modern browsers */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animate__delay-0-5s {
+  animation-delay: 0.5s;
+  --animate-delay: 0.5s;
+}
+
+.animate__delay-1-5s {
+  animation-delay: 1.5s;
+  --animate-delay: 1.5s;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom CSS */
+/* Hover Text Shadow */
+.hover\:text-shadow:hover {
+  text-shadow: 0 0 5px #ffffff4d, 0 0 10px #fff3, 0 0 15px #ffffff1a;
+}
