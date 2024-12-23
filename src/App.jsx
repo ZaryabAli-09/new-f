@@ -15,7 +15,7 @@ export default function App() {
     <BrowserRouter>
       <SectionProvider>
         <Toaster position="bottom-center" />
-        {location.pathname === "/" && <Navbar />}
+        {/* {location.pathname === "/" && <Navbar />} */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />

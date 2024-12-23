@@ -11,6 +11,7 @@ import ReadyToShip from "../components/Home/ReadyToShip";
 import Footer from "../components/Home/Footer";
 
 import "animate.css";
+import Navbar from "../components/Navbar";
 
 const Home = () => {
   const {
@@ -26,37 +27,40 @@ const Home = () => {
   } = useSectionContext(); // Get the refs from context
 
   return (
-    <div className="bg-dark-bg text-white pt-[60px]">
-      <div ref={landingViewRef} id="landing-view">
-        <LandingView />
-      </div>
+    <>
+      <Navbar />
+      <div className="bg-dark-bg text-white pt-[60px]">
+        <div ref={landingViewRef} id="landing-view">
+          <LandingView />
+        </div>
 
-      <div ref={howItWorksRef}>
-        <HowItWorks />
-      </div>
+        <div ref={howItWorksRef}>
+          <HowItWorks />
+        </div>
 
-      <div ref={whyChooseUsRef}>
-        <WhyChooseUs />
-      </div>
+        <div ref={whyChooseUsRef}>
+          <WhyChooseUs />
+        </div>
 
-      <div ref={clearPricingRef}>
-        <ClearPricing />
-      </div>
+        <div ref={clearPricingRef}>
+          <ClearPricing />
+        </div>
 
-      <div ref={faqRef}>
-        <FAQSection />
-      </div>
+        <div ref={faqRef}>
+          <FAQSection />
+        </div>
 
-      <div ref={customerFeedbackRef}>
-        <CustomerFeedback />
-      </div>
+        <div ref={customerFeedbackRef}>
+          <CustomerFeedback />
+        </div>
 
-      <div ref={readyToShipRef}>
-        <ReadyToShip />
-      </div>
+        <div ref={readyToShipRef}>
+          <ReadyToShip />
+        </div>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 };
 
